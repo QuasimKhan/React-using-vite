@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
+import { WeatherProvider } from './context/Weather'
 import './index.css'
-import { CounterProvider } from './contexts/Counter.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <CounterProvider>
+    <WeatherProvider>
     <App />
-    </CounterProvider>
+    </WeatherProvider>
   </React.StrictMode>,
 )
